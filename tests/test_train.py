@@ -4,7 +4,6 @@ import pytest
 from sklearn.datasets import load_digits
 from sklearn.linear_model import LogisticRegression
 from src.train import load_config, train_model
-
 def test_config_loading():
     config = load_config()
     assert "C" in config and isinstance(config["C"], float)
